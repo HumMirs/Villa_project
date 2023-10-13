@@ -1,0 +1,950 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  outline: none !important;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.fixed_container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 3;
+}
+
+.fixed_container a:hover {
+  text-decoration: none;
+}
+
+.navigation li {
+  margin: 60px;
+}
+
+.navigation a {
+  color: black;
+}
+
+.navigation h2 {
+  width: 30px;
+  margin: 45px;
+  margin-right: 300px;
+  font-weight: bold;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Add a semi-transparent background */
+  color: white;
+  /* Text color */
+  padding: 10px;
+}
+
+.carousel-caption h2 {
+  font-size: 30px;
+  padding-top: 80px;
+  padding-left: 200px;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 50px;
+  padding-left: 250px;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.inner-container {
+  width: 80%;
+  margin: 80px auto;
+  display: flex;
+}
+
+.first_container {
+  position: relative;
+}
+
+.featured_img {
+  width: 300px;
+  height: 400px;
+  margin-right: 0px;
+  z-index: -1;
+}
+
+.little_img {
+  background-color: #f35525;
+  width: 102px;
+  position: absolute;
+  left: -45px;
+  top: 350px;
+  z-index: 1;
+  border-radius: 60px;
+  padding: 20px;
+  overflow: visible;
+}
+
+.middle_container {
+  width: 45%;
+  margin-left: 0px;
+  padding-left: 25px;
+  padding-right: 10px;
+}
+
+.p1 {
+  color: #ee626b;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.middle_container h2 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.middle_container a {
+  font-size: 20px;
+}
+
+.border_container {
+  width: 25%;
+  border-radius: 20px;
+  box-shadow: black;
+  padding: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 5px 5px rgb(217, 223, 228);
+}
+
+.icon {
+  margin-right: 10px;
+  width: 100px;
+  padding: 22px;
+}
+
+.border_container h2 {
+  font-size: 26px;
+  margin-top: 20px;
+}
+
+.border_container p {
+  font-size: 15px;
+  color: rgb(208, 216, 223);
+}
+
+.video-container {
+  width: 100%;
+  position: relative;
+}
+
+.dot {
+  width: 100%;
+  position: relative;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(pictures/crop_exclusive_luxury_villa_with_swimming_pool_credit_gettyimages-925052286.jpeg);
+  position: relative;
+  filter: blur(5px);
+}
+
+.text-container {
+  position: absolute;
+  left: 470px;
+  top: 110px;
+  text-align: center;
+}
+
+.text-container h5 {
+  color: #ee626b;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.text-container h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.video-frame {
+  margin-left: 180px;
+  position: absolute;
+  top: 400px;
+}
+
+.video-img {
+  width: 85%;
+  border-radius: 30px;
+}
+
+.play_icon {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 180px;
+  left: 400px;
+  border: 8px solid #f35525;
+  border-radius: 50px;
+}
+
+.about-container {
+  width: 95%;
+  display: flex;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-bottom: 100px;
+}
+
+.part {
+  background-color: #ffeee9;
+  margin-top: 250px;
+  margin-left: 100px;
+  display: flex;
+  padding: 10px 35px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.part h2 {
+  color: #f35525;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.part p {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.ball {
+  position: absolute;
+  background-color: #f35525;
+  width: 50px;
+  height: 50px;
+  border-radius: 40px;
+  color: #f35525;
+  left: 220px;
+  bottom: 70px;
+}
+
+.next-container {
+  display: flex;
+  width: 100%;
+  margin: 0px auto;
+  padding-top: 100px;
+  background-color: #fafafa;
+}
+
+.first-con {
+  width: 40%;
+  padding-left: 50px;
+}
+
+.first-con h5 {
+  color: #ee626b;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.first-con h2 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.secon-con {
+  margin-top: 80px;
+  margin-left: 220px;
+}
+
+.secon-con button {
+  color: white;
+  background-color: black;
+  padding: 15px 35px;
+  border: none;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.next-container2 {
+  background-color: #fafafa;
+  display: flex;
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+
+.info {
+  width: 22%;
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 5px 5px rgb(217, 223, 228);
+  padding: 30px;
+  border-radius: 20px;
+  margin-right: 70px;
+}
+
+.info p {
+  margin-right: 30px;
+  color: #b6c1cf;
+  margin-bottom: 7px;
+}
+
+.info h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+
+.next-container2 img {
+  width: 35%;
+}
+
+.extra-info {
+  width: 30%;
+  padding: 0px 60px;
+  font-size: 15px;
+}
+
+.extra-info h5 {
+  margin-bottom: 30px;
+}
+
+.extra-info p {
+  line-height: 30px;
+  color: #6a7174;
+}
+
+hr {
+  width: 100%;
+  color: #b6c1cf;
+  font-weight: bold;
+}
+
+.next-container3 {
+  width: 100%;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.next-container3 p {
+  color: #ee626b;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.next-container3 h2 {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.detail-container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+}
+
+.detail-container div {
+  width: 30%;
+  background-color: #fafafa;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.detail-container img {
+  width: 80%;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.ad {
+  background-color: #fbd9cf;
+  padding: 6px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.price {
+  color: #f35525;
+  font-weight: bold;
+  margin-left: 30px;
+  font-size: 22px;
+}
+
+.detail-container h2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+span {
+  margin-left: 20px;
+}
+
+.detail-container hr {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.detail-container button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 7px 25px;
+  border: none;
+  border-radius: 30px;
+  margin-left: 80px;
+  margin-bottom: 50px;
+}
+
+.contact-container {
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.pot {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(pictures/kiralik-tatil-villa-night-1_744.jpg);
+  filter: blur(5px);
+}
+
+.top {
+  position: absolute;
+  top: 120px;
+  left: 450px;
+  text-align: center;
+}
+
+.contact-container p {
+  color: #ee626b;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.contact-container h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.map {
+  position: absolute;
+  width: 50%;
+  top: 350px;
+  left: 70px;
+}
+
+.form {
+  width: 35%;
+  position: absolute;
+  top: 350px;
+  left: 730px;
+  border: none;
+  border-radius: 15px;
+  border: red;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 0 5px 5px rgb(217, 223, 228);
+}
+
+.form label {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f6f6f6;
+  margin-bottom: 15px;
+}
+
+.form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f6f6f6;
+  margin-bottom: 15px;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid black;
+}
+
+.form button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.phone-email {
+  display: flex;
+  margin-top: 280px;
+  margin-left: 70px;
+}
+
+.son1 {
+  width: 23%;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 3px rgb(227, 231, 233);
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.son1 img {
+  width: 45px;
+  height: 45px;
+  margin-left: 25px;
+  margin-right: 20px;
+}
+
+.son h2 {
+  color: black;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.son p {
+  margin-left: 10px;
+}
+
+.footer {
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+
+.footer p {
+  margin-left: 350px;
+  padding-top: 40px;
+  font-size: 17px;
+}
+
+.birinci {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(pictures/pxfuel.jpg);
+  height: 350px;
+  background-position: center;
+  position: relative;
+}
+
+.birinci div {
+  position: absolute;
+  top: 100px;
+  left: 490px;
+  text-align: center;
+}
+
+.birinci div button {
+  font-size: 15px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+.birinci div h2 {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+#content {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+}
+
+#all_content {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+}
+
+#apartment_content {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+}
+
+#villa_content {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+}
+
+#penthouse_content {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+}
+
+#all_content div {
+  width: 30%;
+  background-color: #fafafa;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+#apartment_content div {
+  width: 30%;
+  background-color: #fafafa;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+#villa_content div {
+  width: 30%;
+  background-color: #fafafa;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+#penthouse_content div {
+  width: 30%;
+  background-color: #fafafa;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+#all_content img,
+#apartment_content img,
+#villa_content img,
+#penthouse_content img {
+  width: 90%;
+  margin: 25px 16px;
+  border-radius: 15px;
+}
+
+#all_content h2,
+#apartment_content h2,
+#villa_content h2,
+#penthouse_content h2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#all_content hr,
+#apartment_content hr,
+#villa_content hr,
+#penthouse_content hr {
+  width: 80%;
+  margin: 20px auto;
+}
+
+#all_content button,
+#apartment_content button,
+#villa_content button,
+#penthouse_content button {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  padding: 7px 25px;
+  border: none;
+  border-radius: 30px;
+  margin-left: 80px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+#all_content button:hover,
+#apartment_content button:hover,
+#villa_content button:hover,
+#penthouse_content button:hover {
+  background-color: #f35525;
+}
+
+.btnn {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.btnn button {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 25px;
+  margin-left: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.btnn button:hover {
+  color: #f35525;
+}
+
+.btnn button:focus {
+  background-color: #f35525;
+  color: white;
+}
+
+#apartment_content,
+#villa_content,
+#penthouse_content {
+  display: none;
+}
+
+.little_btn {
+  width: 20%;
+  margin: 100px auto;
+}
+
+.little_btn button {
+  width: 15%;
+  border: none;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  padding: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.little_btn button:hover {
+  background-color: #f35525;
+}
+
+.birincik {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(pictures/pxfuel.jpg);
+  height: 350px;
+  background-position: center;
+  position: relative;
+}
+
+.birincik div {
+  position: absolute;
+  top: 100px;
+  left: 400px;
+  text-align: center;
+}
+
+.birincik div button {
+  font-size: 15px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+.birincik div h2 {
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+  color: #444;
+  cursor: pointer;
+  margin-top: 40px;
+  width: 65%;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion-buttonn {
+  width: 100%;
+  color: black;
+  outline: none;
+  border: none;
+  text-align: left;
+  padding: 15px;
+  font-size: 17px;
+  background-color: #fafafa;
+  font-weight: 500;
+}
+
+.accordion-buttonn:focus {
+  color: #f46625;
+}
+
+.accordion-body {
+  background-color: rgb(250, 250, 250);
+}
+
+.ac-container {
+  width: 90%;
+  margin: 150px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-div {
+  width: 70%;
+  padding-bottom: 20px;
+  margin-right: 30px;
+  padding-right: 30px;
+}
+
+.img-div img {
+  width: 100%;
+}
+
+.apart {
+  background-color: #fbd9cf;
+  border-radius: 5px;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-top: 3px;
+}
+
+.paragraph h2 {
+  font-weight: bold;
+  font-size: 26px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.paragraph hr {
+  color: #bababa;
+  margin-bottom: 40px;
+  width: 67%;
+}
+
+.paragraph p {
+  width: 67%;
+  line-height: 30px;
+}
+
+.forumcuk {
+  position: absolute;
+  margin-top: 270px;
+  width: 40%;
+  left: 680px;
+}
+
+.harita {
+  width: 90%;
+  margin: 10px auto;
+  height: 500px;
+  margin-bottom: 150px;
+}
+
+.maps {
+  margin-top: 100px;
+  width: 100%;
+  border-radius: 20px;
+  height: 100%;
+}
+
+.son2 {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px rgb(227, 231, 233);
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.son2 img {
+  width: 55px;
+  height: 45px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.son h2 {
+  color: black;
+  font-size: 20px;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.son p {
+  margin-left: 20px;
+  color: #cac6bd;
+}
+
+.phone-emails {
+  width: 32%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.contact-containers {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.tops {
+  width: 55%;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+
+.pops {
+  padding: 0px;
+}
+
+.top1 {
+  color: #ee626b;
+  font-weight: bold;
+}
+
+.top2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 40px;
+}
+
+.top3 {
+  width: 90%;
+  line-height: 30px;
+}
